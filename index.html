@@ -16,8 +16,11 @@
     }
 
     .main {
-      background-image: url('./images/bg.jpg');
-      background-size: cover;
+      background: #8bca31;
+      background: -moz-linear-gradient(45deg, #8bca31 0%, #1db8a0 100%);
+      background: -webkit-linear-gradient(45deg, #8bca31 0%, #1db8a0 100%);
+      background: linear-gradient(45deg, #8bca31 0%, #1db8a0 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8bca31', endColorstr='#1db8a0', GradientType=1);
     }
 
     .core {
@@ -63,9 +66,13 @@
       max-height: 270px;
       margin-top: 15%;
     }
+
+    .notice {
+      margin-top: 4%;
+    }
     /*************************************************/
 
-    /*** Default styles for large devices (destops) ***/
+    /*** Overriden styles for large devices (destops) ***/
     @media (min-width: 992px) {
       body {
         font-size: 1.8em ! important;
