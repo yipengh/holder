@@ -13,15 +13,13 @@
     }
     */
 
+    /*** Global styles ***/
     body {
-      overflow-y: hidden;
       font-family: "Microsoft YaHei", "Web MSYH" ! important;
-      font-size: 1.8em;
     }
 
     .fill {
       min-height: 100vh;
-      height: 100vh;
     }
 
     .main {
@@ -29,19 +27,23 @@
       background-size: cover;
     }
 
-    @media (min-width: 992px) {
-      .col-lg-offset-4_5 {
-        margin-left: 37.5%;
-      }
-    }
-
     .core {
       background: #f8f8f8;
-      margin-top: 6% ! important;
-      margin-bottom: 6% ! important;
       box-shadow: -16px 16px 32px 0 rgba(0, 0, 0, 0.2);
     }
+    /*********************/
 
+    /*** Default styles for small devices (phones) ***/
+    @media (max-width: 750px) {
+      body {
+        font-size: 3.6em ! important;
+      }
+
+      .core {
+        margin-top: 12% ! important;
+        margin-bottom: 12% ! important;
+      }
+    }
     .content {
       float: none;
       margin: 25.5% 0;
@@ -49,9 +51,11 @@
     }
 
     .logo img {
-      width: 72px;
-      height: 72px;
-      border-radius: 12px;
+      width: 40%;
+      height: 40%;
+      max-width: 144px;
+      max-height: 144px;
+      border-radius: 20px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
 
@@ -61,10 +65,45 @@
     }
 
     .qrcode img {
-      width: 135px;
-      height: 135px;
+      width: 45%;
+      height: 45%;
+      max-width: 270px;
+      max-height: 270px;
       margin-top: 15%;
     }
+    /*************************************************/
+
+    /*** Default styles for medium devices (tablets, small destops) ***/
+    @media (min-width: 768px) {
+      body {
+        font-size: 1.8em ! important;
+      }
+
+      .core {
+        margin-top: 6% ! important;
+        margin-bottom: 6% ! important;
+      }
+
+      .logo img {
+        max-width: 72px;
+        max-height: 72px;
+        border-radius: 12px;
+      }
+
+      .qrcode img {
+        max-width: 135px;
+        max-height: 135px;
+      }
+    }
+    /******************************************************************/
+
+    /*** Default styles for large devices (large destops) ***/
+    @media (min-width: 992px) {
+      .col-lg-offset-4_5 {
+        margin-left: 37.5%;
+      }
+    }
+    /********************************************************/
   </style>
 
   <!--[if lt IE 9]>
@@ -74,7 +113,7 @@
 <body>
   <div class="container-fluid main fill">
     <div class="row">
-      <div class="col-xs-10 col-xs-offset-1 core">
+      <div class="col-lg-3 col-lg-offset-4_5 col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2 core">
         <div class="content">
           <div class="logo">
             <img src="./images/logo.jpg" alt="Voice App Logo" title="Voice App Logo">
