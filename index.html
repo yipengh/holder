@@ -4,8 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Voice - 声音让知识充满灵魂</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <style type="text/css">
     body {
       overflow-y: hidden;
@@ -13,21 +12,32 @@
       font-size: 1.8em;
     }
 
+    .fill {
+      min-height: 100vh;
+      height: 100vh;
+    }
+
     .main {
       background-image: url('./images/bg.jpg');
       background-size: cover;
-      height: 100vh;
+    }
+
+    @media (min-width: 992px) {
+      .col-lg-offset-4_5 {
+        margin-left: 37.5%;
+      }
     }
 
     .core {
       background: #f8f8f8;
-      height: 76vh;
-      margin: 12vh auto;
+      margin-top: 6% ! important;
+      margin-bottom: 6% ! important;
       box-shadow: -16px 16px 32px 0 rgba(0, 0, 0, 0.2);
     }
 
     .content {
-      margin: 14.7% 0;
+      float: none;
+      margin: 25.5% 0;
       text-align: center;
     }
 
@@ -55,30 +65,26 @@
   <![endif]-->
 </head>
 <body>
-  <div class="main">
-    <div class="container">
-      <div class="row">
-        <div class="one-third column">&nbsp;</div>
-        <div class="one-third column core">
-          <div class="content">
-            <div class="logo">
-              <img src="./images/logo.jpg" alt="Voice App Logo" title="Voice App Logo">
-            </div>
-            <div class="appname">
-              <span>Voice</span>
-            </div>
-            <div class="slogan">
-              <span>声音让知识充满灵魂</span>
-            </div>
-            <div class="qrcode">
-              <img src="./images/qrcode.jpg" alt="扫码下载Voice" title="扫码下载Voice">
-            </div>
-            <div class="notice">
-              <span>扫码下载App</span>
-            </div>
+  <div class="container-fluid main fill">
+    <div class="row">
+      <div class="col-lg-3 col-lg-offset-4_5 col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2 core">
+        <div class="content">
+          <div class="logo">
+            <img src="./images/logo.jpg" alt="Voice App Logo" title="Voice App Logo">
+          </div>
+          <div class="appname">
+            <span>Voice</span>
+          </div>
+          <div class="slogan">
+            <span>声音让知识充满灵魂</span>
+          </div>
+          <div class="qrcode">
+            <img src="./images/qrcode.jpg" alt="扫码下载Voice" title="扫码下载Voice">
+          </div>
+          <div class="notice">
+            <span>扫码下载App</span>
           </div>
         </div>
-        <div class="one-third column">&nbsp;</div>
       </div>
     </div>
   </div>
